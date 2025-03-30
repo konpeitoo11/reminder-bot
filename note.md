@@ -12,4 +12,4 @@ on<Event extends keyof ClientEvents>(event: Event, listener: (...args: ClientEve
 - 変数や定数は参照であるため、ある変数の値を他の変数に代入した後に値を書き換えると、元の変数の値も変化する。
 
 # partials
-- clientの作成時にpartialsを設定すると(多分)設定したデータだけとりあえず取得して発火するらしい。計量化のために用いられるらしい。
+- clientの作成時にpartialsを設定すると(多分)設定したデータだけとりあえず取得して発火するらしい。軽量化のために用いられるらしい。
