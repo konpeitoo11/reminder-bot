@@ -7,6 +7,7 @@ import { buttonInteraction } from './lib/buttonInteraction.js';
 import { promises as fs } from 'fs';
 const token = config.token;
 const filePath = param.filePath;
+//const token = process.env.DISCORD_TOKEN;
 
 
 // Create a new client instance
