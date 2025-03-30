@@ -5,12 +5,13 @@
 //const { buttonInteraction } = require('./lib/buttonInteraction.js');
 import { Client, Events, GatewayIntentBits } from 'discord.js';
 import config from './config.json' assert { type: 'json'};
+import param from './param.json' assert { type: 'json'};
 import { settingTime } from './lib/settingTime.js';
 import { checkRemindTime } from './lib/checkRemindTime.js';
 import { buttonInteraction } from './lib/buttonInteraction.js';
 import { promises as fs } from 'fs';
 const token = config.token;
-const filePath = config.filePath;
+const filePath = param.filePath;
 
 
 // Create a new client instance

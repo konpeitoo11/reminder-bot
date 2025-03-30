@@ -1,0 +1,4 @@
+{
+    "timeurl" : "https://timeapi.io/api/Time/current/zone?timeZone=Asia/Tokyo",
+    "filePath" : "./data/data.json"
+}
