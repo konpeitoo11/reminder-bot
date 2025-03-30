@@ -20,3 +20,4 @@ The `time` should be specified in the format of 0:00 to 23:59.
 ```sh
 $ mkdir data
 ```
+- Please specify the `token` in `config.json` or set it as an environment variable (`DISCORD_TOKEN`).
