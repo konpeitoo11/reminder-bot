@@ -1,8 +1,3 @@
-//const { Client, Events, GatewayIntentBits } = require('discord.js');
-//const { token } = require('./config.json');
-//const { settingTime } = require('./lib/settingTime.js');
-//const { checkRemindTime } = require('./lib/checkRemindTime.js');
-//const { buttonInteraction } = require('./lib/buttonInteraction.js');
 import { Client, Events, GatewayIntentBits } from 'discord.js';
 import config from './config.json' assert { type: 'json'};
 import param from './param.json' assert { type: 'json'};
@@ -42,7 +37,7 @@ client.on(Events.MessageCreate, async argmessage => {
 
 //collecting button interaction
 client.on(Events.InteractionCreate, async interaction => {
-    interaction.deleteReply();
+    await interaction.deferReply();
     buttonInteraction(interaction, client);
 })
 
@@ -51,6 +46,7 @@ const interval = 1000 * 55;
 
 //loop function
 function loopActions(){
+    console.log("loopActions");
     checkRemindTime(client);
 	setTimeout(loopActions, interval);
 }
@@ -73,7 +69,7 @@ function loopActions(){
         }else{
             console.error("Error:\n", error);
         }
-    }
+    }    
 
     loopActions();
 })();

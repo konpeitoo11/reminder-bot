@@ -16,3 +16,7 @@ The `time` should be specified in the format of 0:00 to 23:59.
 
 ## Specifications
 - if you push `later`, the bot will remind you after an hour.
+- You might want to run the next command first.
+```sh
+$ mkdir data
+```
